@@ -5,8 +5,7 @@ declare(strict_types = 1);
  * Process the puzzle for AOC Day 2A
  * @copyright (c) eDifference 2023
  */
-class Processor
-{
+(new class {
     private const COLOR_MAX = [
         'red' => 12,
         'green' => 13,
@@ -76,6 +75,4 @@ class Processor
         }
         return true;
     }
-}
-
-(new Processor())->run();
+})->run();

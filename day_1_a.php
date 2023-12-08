@@ -5,8 +5,7 @@ declare(strict_types = 1);
  * Process the puzzle for AOC Day 1A
  * @copyright (c) eDifference 2023
  */
-class Processor
-{
+(new class {
     /**
      * Run the puzzle
      * @return void
@@ -31,6 +30,4 @@ class Processor
         preg_match_all("/\d/", $line, $digits);
         return intval(reset($digits[0]).end($digits[0]));
     }
-}
-
-(new Processor())->run();
+})->run();

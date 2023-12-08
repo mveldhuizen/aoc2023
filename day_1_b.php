@@ -5,8 +5,7 @@ declare(strict_types = 1);
  * Process the puzzle for AOC Day 1B
  * @copyright (c) eDifference 2023
  */
-class Processor
-{
+(new class {
     /**
      * Run the puzzle
      * @return void
@@ -59,6 +58,4 @@ class Processor
             $line
         );
     }
-}
-
-(new Processor())->run();
+})->run();
