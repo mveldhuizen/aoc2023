@@ -13,7 +13,7 @@ class Processor
      */
     public function run(): void
     {
-        $data = file('data/day_1_a.txt');
+        $data = file('data/day_1.txt');
         $counter = 0;
         foreach ($data as $line) {
             $counter += $this->getLineValue($line);
